@@ -28,7 +28,7 @@ jobs:
 
       - name: ls /dev
         run: |
-          ls -l /dev
+          ls -l /dev || echo ignore errors.
         shell: bash
         
       - name: echo to dev/full
