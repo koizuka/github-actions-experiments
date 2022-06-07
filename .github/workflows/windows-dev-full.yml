@@ -33,5 +33,5 @@ jobs:
         
       - name: echo to dev/full
         run: |
-          echo test > /dev/full
+          echo test > /dev/full || echo "did you see?"
         shell: bash
