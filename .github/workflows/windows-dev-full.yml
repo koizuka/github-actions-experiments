@@ -26,9 +26,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Run a multi-line script
+      - name: ls /dev
         run: |
           ls -l /dev
-          echo test > /dev/full
         shell: bash
         
+      - name: echo to dev/full
+        run: |
+          echo test > /dev/full
+        shell: bash
